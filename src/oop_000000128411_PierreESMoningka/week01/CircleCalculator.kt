@@ -15,10 +15,15 @@ fun main(args: Array<String>) {
     checkSize(area)
 }
 
-fun checkSize(area) {
-    if (area > 100) {
-        println("This is a Big Circle")
+fun checkSize(area: Double) = if (area > 100) {
+        "This is a Big Circle"
     } else {
-        println("This is a Small Circle")
+        "This is a Small Circle"
     }
+
+fun main() {
+    val area = 120.0
+
+    // Memanggil fungsi di dalam println sesuai instruksi
+    println(checkSize(area))
 }
