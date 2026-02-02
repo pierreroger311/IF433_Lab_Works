@@ -1,18 +1,15 @@
 package oop_000000128411_PierreESMoningka.week01
 
-fun main(args: Array<String>) {
+fun main() {
     // Variable definition
     val radius = 7.0
     val pi = 3.14
-
-    // Calculation
     val area = pi * radius * radius
 
-    // Output Concatenation
     println("Radius: $radius, Area: $area")
 
-    // Logic check
-    checkSize(area)
+    // Memanggil fungsi checkSize didalam println sesuai instruksi
+    println(checkSize(area))
 }
 
 fun checkSize(area: Double) = if (area > 100) {
@@ -20,10 +17,3 @@ fun checkSize(area: Double) = if (area > 100) {
     } else {
         "This is a Small Circle"
     }
-
-fun main() {
-    val area = 120.0
-
-    // Memanggil fungsi di dalam println sesuai instruksi
-    println(checkSize(area))
-}
