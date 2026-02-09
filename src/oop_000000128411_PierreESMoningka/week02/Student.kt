@@ -1,7 +1,7 @@
 package oop_000000128411_PierreESMoningka.week02
 
-class Student (val name: String, val nim: String, var major: String) { new *
-    init { new *
+class Student (val name: String, val nim: String, var major: String) {
+    init {
         // Validasi Sederhana: Cek panjang NIM
         if (nim.length !=5) {
             println("WARNING: Objek tercipta dengan NIM ($nim) yang tidak valid!")
