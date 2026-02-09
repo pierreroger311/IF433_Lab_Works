@@ -1,3 +1,7 @@
+package oop_000000128411_PierreESMoningka.week02
+
+import java.util.Scanner
+
 class Loan(
     val bookTitle: String,
     val borrower: String,
@@ -13,9 +17,26 @@ class Loan(
 }
 
 fun main() {
-    val loan1 = Loan("Laskar Pelangi", "Andi", 5)
-    val loan2 = Loan("Bumi Manusia", "Budi")
+    val scanner = Scanner(System.`in`)
 
-    println("Denda ${loan1.borrower}: Rp ${loan1.calculateFine()}")
-    println("Denda ${loan2.borrower}: Rp ${loan2.calculateFine()}")
+    print("Masukkan Judul Buku: ")
+    val title = scanner.nextLine()
+
+    print("Masukkan Nama Peminjam: ")
+    val borrower = scanner.nextLine()
+
+    print("Masukkan Lama Pinjam (hari): ")
+    var duration = scanner.nextInt()
+
+    if (duration < 0) {
+        duration = 1
+    }
+
+    val loan = Loan(title, borrower, duration)
+
+    println("\n=== Detail Peminjaman ===")
+    println("Judul Buku   : ${loan.bookTitle}")
+    println("Peminjam     : ${loan.borrower}")
+    println("Lama Pinjam  : ${loan.loanDuration} hari")
+    println("Total Denda  : Rp ${loan.calculateFine()}")
 }
