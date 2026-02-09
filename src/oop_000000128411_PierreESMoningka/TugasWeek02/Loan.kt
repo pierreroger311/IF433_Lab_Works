@@ -1,4 +1,4 @@
-package oop_000000128411_PierreESMoningka.week02
+package oop_000000128411_PierreESMoningka.TugasWeek02
 
 import java.util.Scanner
 
