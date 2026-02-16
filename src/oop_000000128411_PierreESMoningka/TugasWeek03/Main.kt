@@ -5,7 +5,6 @@ fun main() {
     println("=== TESTING PLAYER ===")
     val player1 = Player("Pierre")
     player1.displayStats()
-    player1.displayStats()
 
     player1.addXp(50)
     player1.addXp(60) // Ini akan memicu Level Up
