@@ -1,5 +1,10 @@
 package oop_000000128411_PierreESMoningka.week06
 
-// ERROR: Class Smartphone inherits multiple implementations of turnON()
 class Smarthphone : Camera, Phone {
+    // Manually override to resolve ambuigity
+    override fun turnOn() {
+        super<Camera>.turnOn()
+        super<Phone>.turnOn()
+        println("Sistem operasi Smartphone berhasil booting.")
+    }
 }
