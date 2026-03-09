@@ -1,11 +1,12 @@
 package oop_000000128411_PierreESMoningka.week06
 
 class Smartwatch : Watch(), BluetoothConnectable, Rechargeable {
+
     override fun showTime() {
         println("Layar OLED menyala: 14:00 WIB")
     }
 
-    override fun chargeBattery() {
+    override fun connectToBluetooth() {
         println("Mencari perangkat HP di sekitar untuk pairing...")
     }
 
