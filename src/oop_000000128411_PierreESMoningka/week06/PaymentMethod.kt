@@ -1,0 +1,5 @@
+package oop_000000128411_PierreESMoningka.week06
+
+interface PaymentMethod {
+    fun pay(amount: Double)
+}
