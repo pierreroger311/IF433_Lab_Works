@@ -5,3 +5,4 @@ fun main() {
     val lampuTamu = SmartLamp("L01", "Ruang Tamu")
     val googleNest = SmartSpeaker("S01", "Google Nest Dapur")
     val ezvizGarasi = SmartCCTV("C01", "Ezviz Garasi")
+}
