@@ -13,8 +13,6 @@ fun main() {
     val starterWeapon = Weapon.forgeStarterSword()
     println("Senjata awal: ${starterWeapon.item.name} dengan durability ${starterWeapon.durability}")
 
-    // CHECKPOINT 19: Commit "week07: (task) simulate rarity and factory instantiation"
-
     println("\n--- Simulasi Event & Immutability ---")
     // Upgrade dengan copy()
     val upgradedItem = starterWeapon.item.copy(name = "Pedang Kayu Upgrade", damage = 25)
