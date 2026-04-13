@@ -1,6 +1,6 @@
 package oop_000000128411_PierreESMoningka.week08
 
-fun Main() {
+fun main() {
     println("=== TEST SAFE CLASS & ELVIS ===")
     val emptyOrder = Order(null, null)
 
