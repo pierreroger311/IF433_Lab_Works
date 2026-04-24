@@ -1,6 +1,9 @@
 package oop_000000128411_PierreESMoningka.TugasWeek09
 
+package oop_000000128411_PierreESMoningka.TugasWeek09
+
 fun main() {
+    // Checkpoint 11
     val tradeHistory = listOf(
         TradeLog("BTCUSDT", "LONG", 20, 15.5, "CLOSED"),
         TradeLog("ETHUSDT", "SHORT", 10, -5.2, "CLOSED"),
@@ -11,20 +14,25 @@ fun main() {
         TradeLog("DOTUSDT", "LONG", 10, 4.5, "CLOSED")
     )
 
+    // Checkpoint 12, 13, 14
     val closedTrades = tradeHistory.filter { it.status == "CLOSED" }
     val winningTrades = closedTrades.filter { it.roe > 0 }
     val losingTrades = closedTrades.filter { it.roe <= 0 }
 
+    // Checkpoint 15
     val topPerformersString = winningTrades
         .sortedByDescending { it.roe }
         .map { "WIN [${it.pair} - ${it.position}]: +${it.roe}% ROE (Lev: ${it.leverage}x)" }
 
+    // Checkpoint 16
     val worstPerformersString = losingTrades
         .sortedBy { it.roe }
         .map { "LOSS [${it.pair} - ${it.position}]: ${it.roe}% ROE (Lev: ${it.leverage}x)" }
 
+    // Checkpoint 17
     val uniquePairs = tradeHistory.map { it.pair }.toSet()
 
+    // Checkpoint 18 & 19
     println("=== CRYPTO TRADING DASHBOARD ===")
     println("--- TOP PERFORMERS ---")
     topPerformersString.forEach { println(it) }
