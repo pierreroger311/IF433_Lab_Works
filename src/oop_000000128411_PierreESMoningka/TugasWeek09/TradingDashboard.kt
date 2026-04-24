@@ -28,4 +28,10 @@ fun main() {
     println("=== CRYPTO TRADING DASHBOARD ===")
     println("--- TOP PERFORMERS ---")
     topPerformersString.forEach { println(it) }
+
+    println("\n--- WORST PERFORMERS ---")
+    worstPerformersString.forEach { println(it) }
+
+    println("\n--- TRADED PAIRS ---")
+    println(uniquePairs.joinToString(", "))
 }
