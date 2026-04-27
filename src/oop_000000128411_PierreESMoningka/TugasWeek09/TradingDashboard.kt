@@ -1,7 +1,5 @@
 package oop_000000128411_PierreESMoningka.TugasWeek09
 
-package oop_000000128411_PierreESMoningka.TugasWeek09
-
 fun main() {
     // Checkpoint 11
     val tradeHistory = listOf(
