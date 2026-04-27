@@ -2,4 +2,8 @@ package oop_000000128411_PierreESMoningka.TugasWeek10
 
 fun main() {
     val coinRepo = WalletRepository<Coin>()
+
+    coinRepo.add(Coin("BTC", 0.523))
+    coinRepo.add(Coin("ETH", 4.15))
+    coinRepo.add(Coin("USDT", 1500.0))
 }
