@@ -25,7 +25,7 @@ fun main() {
         isOnline = true
         powerLoad = 5
     }.also {
-        println("(LOG) Kamera terhubung")
+        println("(LOG) Kamera terhubung ")
         homeDevices.add(it)
     }
 }
