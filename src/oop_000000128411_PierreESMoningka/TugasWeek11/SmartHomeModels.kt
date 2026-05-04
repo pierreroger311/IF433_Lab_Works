@@ -40,5 +40,9 @@ fun main() {
     searchResult?.let {
         println(it.diagnose())
     }
+
+    with(homeDevices) {
+        println("Jumlah perangkat di dashboard: ${this.size}")
+    }
 }
 
