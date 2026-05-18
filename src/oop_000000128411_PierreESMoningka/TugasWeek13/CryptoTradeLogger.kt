@@ -1,4 +1,13 @@
 package oop_000000128411_PierreESMoningka.TugasWeek13
+import java.io.File
+
+fun saveTrades(trades: List<TradeRecord>, path: String) {
+    File(path).printWriter().use { writer ->
+        trades.forEach { trade ->
+            writer.println(trade.toCsv())
+        }
+    }
+}
 
 data class TradeRecord(
     val id: Int,
