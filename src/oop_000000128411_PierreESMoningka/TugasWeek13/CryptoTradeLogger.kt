@@ -47,3 +47,15 @@ fun fromCsvTrade(line: String): TradeRecord? {
     }
 }
 
+fun main() {
+    val path = "crypto_trades.csv"
+
+    val simulatedTrades = listOf(
+        TradeRecord(1, "BTCUSDT", "LONG", 150.0, 45.5),
+        TradeRecord(2, "ETHUSDT", "SHORT", 100.0, -12.3),
+        TradeRecord(3, "SOLUSDT", "LONG", 50.0, 8.8)
+    )
+
+    saveTrades(simulatedTrades, path)
+}
+
