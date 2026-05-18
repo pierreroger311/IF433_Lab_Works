@@ -1,5 +1,15 @@
 package oop_000000128411_PierreESMoningka.TugasWeek13
 import java.io.File
+import java.io.FileNotFoundException
+
+fun loadTrades(path: String): List<TradeRecord> {
+    return try {
+        File(path).readLines().mapNotNull { fromCsvTrade(it) }
+    } catch (e: FileNotFoundException) {
+        println("File tidak ditemukan: $path")
+        emptyList()
+    }
+}
 
 fun saveTrades(trades: List<TradeRecord>, path: String) {
     File(path).printWriter().use { writer ->
