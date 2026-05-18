@@ -59,5 +59,8 @@ fun main() {
     saveTrades(simulatedTrades, path)
 
     File("crypto_trades.csv").appendText("CORRUPT_ID,DOGEUSDT,Hold,XX,YY\n")
+
+    val loadedData = loadTrades("crypto_trades.csv")
+    val totalPnl = loadedData.sumOf { it.pnl }
 }
 
