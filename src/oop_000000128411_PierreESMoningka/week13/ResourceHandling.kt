@@ -34,7 +34,7 @@ fun main() {
     safeFile.bufferedReader().use { reader ->
         // Kita gunakan sequence dan ambil 5 baris pertama saja
         reader.lineSequence().take(5).forEach { line ->
-            println("Stream Read: $Line")
+            println("Stream Read: $line")
         }
     } // File otomatis di-close di sini!
 }
